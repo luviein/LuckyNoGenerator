@@ -10,7 +10,7 @@
     <a href="/home">Back to home</a>
 
 
-    <h1>Hello <label th:text="${name}"></label>. Your lucky number is:</h1>
+    <h1>Hello <label th:text="${param.name}"></label>. Your lucky number is:</h1>
 
     <div th:if="${not #lists.isEmpty(imageList)}">
         <div th:each="image : ${imageList}">
