@@ -15,13 +15,13 @@ import sg.nus.iss.visa.ssf.day12practice1.Image.Image;
 import sg.nus.iss.visa.ssf.day12practice1.Service.RandNumService;
 
 @Controller
-//@RequestMapping(path = "/api")
+@RequestMapping
 public class MyController {
     
     @Autowired
     RandNumService service;
 
-    @GetMapping("/home")
+    @GetMapping
     public String getHome(){
         return "home";
     }
